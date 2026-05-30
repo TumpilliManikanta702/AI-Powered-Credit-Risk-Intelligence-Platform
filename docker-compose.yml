@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  credit-risk-platform:
+    build: .
+    container_name: credit-risk-app
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+    restart: unless-stopped
