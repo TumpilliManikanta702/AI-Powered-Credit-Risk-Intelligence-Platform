@@ -64,14 +64,29 @@ To run the application using Docker Compose:
 
 ## Screenshots
 
-The platform includes the following views:
-- **Dashboard**: Overview of credit risk metrics and model performance
-- **Prediction Page**: Interactive form for individual risk assessment
-- **SHAP Explainability**: Feature importance plots and local explanations
-- **NL-to-SQL Chatbot**: Natural language interface to query the database
-- **EDA Charts**: Exploratory data analysis visualizations
+### Dashboard Overview
+![Dashboard](docs/screenshots/dashboard.png)
 
-*Note: Screenshots should be added here from actual application runs.*
+### EDA - Key Business Insights
+![EDA Insights](docs/screenshots/EDA%20Key%20Business%20Insights.png)
+
+### EDA - Charts and Visualizations
+![EDA Charts](docs/screenshots/EDA%20Charts%20(Target%20Distribution,%20Age%20Distribution,%20etc.).png)
+
+### EDA - Missing Value Analysis and Correlation Matrix
+![EDA Missing Correlation](docs/screenshots/EDA%20Missing%20Value%20Analysis%20and%20Correlation%20Matrix.png)
+
+### Risk Prediction
+![Risk Prediction](docs/screenshots/Risk%20Prediction.png)
+
+### Explainability (SHAP)
+![Explainability](docs/screenshots/Explainability%20(SHAP).png)
+
+### Business Rules Engine
+![Business Rules](docs/screenshots/Business%20Rules%20Engine.png)
+
+### AI Chatbot (NL-to-SQL)
+![AI Chatbot](docs/screenshots/AI%20Chatbot%20(NL-to-SQL).png)
 
 ## Prompt Engineering & Hallucination Reduction
 
