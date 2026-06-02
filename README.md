@@ -62,6 +62,17 @@ To run the application using Docker Compose:
 - **Imbalance Strategy**: Using SMOTE to synthetically oversample the minority class (defaulters) to ensure the model doesn't just predict the majority class.
 - **Evaluation Metrics**: ROC-AUC, F1-Score, Precision, and Recall are prioritized over accuracy due to class imbalance.
 
+## Screenshots
+
+The platform includes the following views:
+- **Dashboard**: Overview of credit risk metrics and model performance
+- **Prediction Page**: Interactive form for individual risk assessment
+- **SHAP Explainability**: Feature importance plots and local explanations
+- **NL-to-SQL Chatbot**: Natural language interface to query the database
+- **EDA Charts**: Exploratory data analysis visualizations
+
+*Note: Screenshots should be added here from actual application runs.*
+
 ## Prompt Engineering & Hallucination Reduction
 
 - **Schema-aware prompts**: The LLM is explicitly provided with the SQLite table schema.

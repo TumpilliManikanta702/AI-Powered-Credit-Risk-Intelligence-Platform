@@ -9,7 +9,7 @@ SQL_DIR = BASE_DIR / "sql"
 
 # File Paths
 RAW_DATA_PATH = DATA_DIR / "application_train.csv"
-DB_PATH = DATA_DIR / "credit_risk.db"
+DB_PATH = SQL_DIR / "credit_risk.db"
 MODEL_PATH = MODELS_DIR / "model.pkl"
 
 # ML Configurations

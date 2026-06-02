@@ -37,7 +37,7 @@ venv.bak/
 
 # Project specifics
 data/*.csv
-data/*.db
+sql/*.db
 models/*.pkl
 
 
