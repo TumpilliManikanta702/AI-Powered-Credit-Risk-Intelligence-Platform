@@ -2,9 +2,11 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from src.data.loader import load_raw_data
+import streamlit as st
 
+@st.cache_data(ttl=3600)
 def get_eda_data():
-    """Loads and returns data for EDA."""
+    """Loads and returns data for EDA with caching."""
     return load_raw_data()
 
 def get_dataset_summary(df):

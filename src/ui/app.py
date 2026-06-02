@@ -129,8 +129,11 @@ elif page == "Risk Prediction":
     if df.empty:
         st.warning("No data available.")
     else:
-        sample_idx = st.selectbox("Select Customer (Index)", df.index[:100])
-        customer_data = df.iloc[[sample_idx]].copy()
+        # Reset index to ensure proper positional indexing
+        df_reset = df.reset_index(drop=True)
+        max_idx = min(100, len(df_reset))
+        sample_idx = st.selectbox("Select Customer (Index)", range(max_idx))
+        customer_data = df_reset.iloc[[sample_idx]].copy()
         
         st.session_state.selected_customer = customer_data
         
